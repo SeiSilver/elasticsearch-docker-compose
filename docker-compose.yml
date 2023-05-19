@@ -12,8 +12,8 @@ services:
       - xpack.security.enabled=false
     ports:
       - "9200:9200"
-    volumes:
-      - ./elasticsearch_data:/usr/share/elasticsearch/data
+#    volumes:
+#      - ./elasticsearch_data:/usr/share/elasticsearch/data
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.3.3
